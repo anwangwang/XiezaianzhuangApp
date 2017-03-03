@@ -20,7 +20,7 @@ public class AppStateReceiver extends BroadcastReceiver {
 
         if ("android.intent.action.PACKAGE_ADDED".equals(action)){
             Log.d(TAG, "onReceive: 应用被安装了 -----ADDED");
-        }else if ("android.intent.action.PACKAGE_INSTALL".equals(action)){
+        }else if ("android.intent.action.PACKAGE_INSTALL".equals(action)){// 预留的，不起作用
             Log.d(TAG, "onReceive: 应用被安装了 -----INSTALL");
         }else if ("android.intent.action.PACKAGE_REMOVED".equals(action)){
             Log.d(TAG, "onReceive: 应用被卸载了 ");
